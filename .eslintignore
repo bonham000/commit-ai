@@ -1,0 +1,7 @@
+node_modules
+.github
+.husky
+.swc
+.vscode
+dist
+jest.config.js

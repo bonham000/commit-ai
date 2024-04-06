@@ -1,0 +1,56 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:typescript-sort-keys/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "unused-imports",
+    "sort-keys-fix",
+    "typescript-sort-keys",
+    "sort-destructure-keys"
+  ],
+  "parserOptions": {
+    "project": true
+  },
+  "rules": {
+    // Miscellaneous rules:
+    "curly": "error",
+    "sort-keys-fix/sort-keys-fix": "error",
+    "sort-keys": "off",
+    "import/no-anonymous-default-export": "off",
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "no-console": [
+      "warn",
+      { "allow": ["trace", "info", "warn", "error", "debug"] }
+    ],
+
+    // @typescript-eslint rules:
+    "sort-destructure-keys/sort-destructure-keys": "error",
+    "@typescript-eslint/sort-type-constituents": "error",
+    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "@typescript-eslint/explicit-function-return-type": ["error"],
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
+    "@typescript-eslint/no-duplicate-enum-values": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ]
+  }
+}

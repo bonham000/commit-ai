@@ -1,0 +1,14 @@
+{
+  "editor.codeActionsOnSave": {
+    "editor.formatOnSave": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.terminal.activateEnvironment": false,
+  "mypy.enabled": false,
+  "ruff.enable": false,
+}
